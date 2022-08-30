@@ -1,0 +1,21 @@
+* Formatted I/O
+1. Control strings are used.
+2. printf() and scanf() are the functions for Formatted I/O.
+3. Example 
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("a=%d, b=%d", a,b);
+
+
+* Unformatted I/O
+1. Control strings aren't used.
+2. getchar(),putchar(),gets() and puts are some functions used for Unformatted I/O.
+3. Example
+    char ch;
+    ch=getchar();
+    putchar(ch);
+
+    char str[20];
+    gets(str);
+    puts(str);
+

@@ -1,0 +1,89 @@
+Function
+A function is a self-contained unit of code that can be called upon and executed.
+
+Types of function
+1. Built-in function
+2. User-defined function
+
+#Build-in function
+These are available as a part of standard library.
+For example: sin, cos, tan, exp, log, sqrt, etc.
+
+#User-defined function
+User-defined function is a function that is defined by the user.
+For example: my_function, my_function2, etc.
+
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+
+#Function Parameters
+1.Parameters are the variables that are passed to a function.
+2.Parameters are used to receive values from the caller.
+3.For example: x, y, z, etc.
+
+-------------------------------------------------------------------------------------------------------------------
+#Function Arguments
+1.Arguments are the values that are passed to a function.   
+2.Arguments are used to pass values to the caller.
+3.For example: 1, 2, 3, etc.
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+
+#Pass by value
+1. In pass by value the value of actual arguments is passed to the function.
+2. An example of calling a function using pass by value is shown below:
+    swap(x, y);
+3. In pass by value, formal arguments are simply the copy or duplicates of actual arguments.
+4. In pass by value, actual arguments are not modified.
+5. For example:
+-------------------------------------------------------------------------------------------------------------------
+    int a=1,b=2;
+    printf("Before swap: a=%d, b=%d\n", a, b);
+    swap(a, b);
+    printf("After swap: a=%d, b=%d\n", a, b);
+-------------------------------------------------------------------------------------------------------------------
+void swap(int p, int q)
+{
+    int temp;
+    temp = p;
+    p = q;
+    q = temp;
+}
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+#Pass by reference
+1. In pass by reference the address of actual arguments is passed to the function.
+2. An example of calling a function using pass by reference is shown below:
+    swap(&x, &y);
+3. In pass by reference, formal arguments are the addresses of actual arguments.
+4. In pass by reference, actual arguments are modified.
+5. For example:
+-------------------------------------------------------------------------------------------------------------------
+    int a=1,b=2;
+    printf("Before swap: a=%d, b=%d\n", a, b);
+    swap(&a, &b);
+    printf("After swap:  a=%d, b=%d\n", a, b);
+-------------------------------------------------------------------------------------------------------------------
+    void swap(int *p, int *q)
+    {
+        int temp;
+        temp = *p;
+        *p = *q;
+        *q = temp;
+    }
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+
+#Recursive Function
+1. Recursive function is a function that calls itself.
+2. An example of recursive function is shown below:
+    int fact(int n)
+    {
+        if (n == 0)
+            return 1;
+        else
+            return n * fact(n - 1);
+    }
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+
