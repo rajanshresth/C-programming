@@ -7,7 +7,7 @@ int main(){
     printf("Enter a number:");
     scanf("%d",&x);
     
-    for(i=1;i<=2x-1;i++){
+    for(i=1;i<=2*x-1;i++){
         s=s+pow(x,i)/factorial(i);
     }
     printf("Sum of series=%f",s);
